@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,100:7c3aed&height=140§ion=header&text=Sathwick%20Kiran%20M%20S&fontSize=38&fontColor=ffffff&fontAlignY=55&desc=Data%20Scientist%20%7C%20ML%20Engineer%20%7C%20Ex-Sony%20Data%20Platform%20Engineer&descAlignY=78&descSize=14" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,100:7c3aed&height=140§ion=header&text=Sathwick%20Kiran%20M%20S&fontSize=38&fontColor=ffffff&fontAlignY=55&desc=Data%20Professional%20%7C%20Python%20%C2%B7%20SQL%20%C2%B7%20ETL%20%C2%B7%20ML%20%C2%B7%20Power%20BI%20%7C%20Ex-Sony%20%7C%20MS%20Data%20Science%2C%20UB&descAlignY=78&descSize=13" width="100%"/>
 
 </div>
 
@@ -16,26 +16,20 @@
 
 ### 👋 About Me
 
-```python
-sathwick = {
-    "role"     : "Data Scientist · ML Engineer · DataOps",
-    "education": "MS Data Science @ University at Buffalo",
-    "prev"     : "Data Platform Engineer @ Sony",
-    "location" : "Buffalo, New York",
-    "focus"    : ["Scalable ML Systems", "Big Data Pipelines", "DataOps", "AI Engineering"],
-    "open_to"  : "Full-time roles in Data Science · ML Engineering · Data Engineering"
-}
-```
+Data professional with 2 years of experience at Sony and an MS in Data Science from the University at Buffalo. My work spans data engineering, analytics, and applied machine learning — building ETL pipelines, Power BI dashboards, and reporting solutions that cross-functional teams use to make decisions.
 
-> I build **end-to-end ML systems and data pipelines** — from raw, messy data to production-grade models, observability platforms, and AI-powered systems. Previously at **Sony**, now at **University at Buffalo**.
+At Sony, I worked on Python and SQL data workflows across 5+ internal teams, automated reporting pipelines, and implemented data quality checks that improved consistency and reduced manual effort by 15%. Outside of work I have built a LangGraph multi-agent AI system using LLMs and generative AI, processed 3.3M+ records using PySpark and NLP on Hadoop, and built a containerized DataOps observability platform with Kafka, Airflow, dbt, and Tableau.
+
+**Open to full-time roles in:** Data Analytics · Data Engineering · Analytics Engineering · Data Science · Machine Learning Engineering
 
 ---
 
-### 🔭 Featured Projects
+### 🚀 Featured Projects
 
 ---
 
-#### 🔭 DataOps Change Impact & Pipeline Failure Observability Platform
+**01 — DataOps Change Impact & Pipeline Failure Observability Platform**
+
 > *End-to-end DataOps platform for real-time pipeline monitoring, schema drift detection, SLA tracking, and AI-assisted root cause analysis*
 
 Modern data teams lack centralized visibility into pipeline health. This platform addresses that — tracking every pipeline run, detecting failures and SLA breaches in real time, tracing downstream schema change impact, and surfacing root causes via a RAG-powered API backed by a local LLaMA model.
@@ -72,7 +66,8 @@ Kafka Topics → Airflow Orchestration → PostgreSQL Raw Layer
 
 ---
 
-#### 🦴 Osteoporosis Risk Prediction
+**02 — Osteoporosis Risk Prediction**
+
 > *Multi-model classification pipeline for early-stage osteoporosis detection from patient medical records*
 
 Built on 1,958 patient records, this project applies four ML classifiers — Logistic Regression, Random Forest, Decision Tree, and SVC — to predict osteoporosis risk from clinical features including age, hormonal changes, calcium intake, and physical activity. The Decision Tree Classifier achieved **90.6% accuracy** after hyperparameter tuning, up from a 73% baseline, and was selected for its clinical interpretability.
@@ -93,7 +88,8 @@ Built on 1,958 patient records, this project applies four ML classifiers — Log
 
 ---
 
-#### 🛒 Amazon Book Review Analytics
+**03 — Amazon Book Review Analytics**
+
 > *Full-scale big data pipeline processing 3.3M+ reviews using Hadoop, PySpark, and Spark MLlib*
 
 An end-to-end distributed ML pipeline covering the complete data lifecycle — HDFS ingestion via a custom Java ingestion script, PySpark EDA, TF-IDF feature extraction, and multi-model training for sentiment classification, rating prediction, and helpfulness prediction. Post hyperparameter tuning with GridSearchCV, Logistic Regression achieved **95.01% accuracy** and **93.45% F1-score** as the best-performing model.
@@ -118,7 +114,8 @@ books.csv + rating.csv → HDFS → PySpark EDA → TF-IDF Feature Extraction
 
 ---
 
-#### 🤖 Synapse Street — AI Multi-Agent Short Selling Detection
+**04 — Synapse Street · AI Multi-Agent Short Selling Detection**
+
 > *Multi-agent LLM system for detecting short-selling opportunities in U.S. equities — built in 15 hours at UB Hackers 2024*
 
 Three coordinated LangGraph agents — Analyst, Model, and Risk — share a Qdrant vector memory and collaboratively evaluate short-selling signals across a ~5GB historical U.S. stock dataset processed on a two-node HDFS cluster (Vultr Cloud). A Logistic Regression model computes per-ticker short probabilities, with the top candidate **CMAX** reaching a 94.5% short probability. Results surface via Streamlit and Tableau dashboards.
@@ -168,11 +165,16 @@ Three coordinated LangGraph agents — Analyst, Model, and Risk — share a Qdra
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-336791?style=flat-square&logo=postgresql&logoColor=white)
 ![Hadoop](https://img.shields.io/badge/Hadoop_HDFS-FFCE00?style=flat-square&logo=apachehadoop&logoColor=black)
 
+**Analytics & BI**
+
+![Power BI](https://img.shields.io/badge/Power_BI-F2C811?style=flat-square&logo=powerbi&logoColor=black)
+![Tableau](https://img.shields.io/badge/Tableau-E97627?style=flat-square&logo=tableau&logoColor=white)
+![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
+
 **Cloud & Tools**
 
 ![AWS](https://img.shields.io/badge/AWS-FF9900?style=flat-square&logo=amazonaws&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-0ea5e9?style=flat-square&logo=docker&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=flat-square&logo=grafana&logoColor=white)
 ![Git](https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
 
@@ -191,7 +193,7 @@ Three coordinated LangGraph agents — Analyst, Model, and Risk — share a Qdra
 
 <div align="center">
 
-📍 Buffalo, NY  ·  💼 Open to full-time roles in Data Science · ML Engineering · Data Engineering
+📍 New York, United States  ·  💼 Open to Data Analyst · Data Engineer · Data Scientist · Analytics Engineer · ML Engineer roles
 
 <img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,100:0ea5e9&height=80§ion=footer" width="100%"/>
 
