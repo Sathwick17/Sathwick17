@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,100:7c3aed&height=140§ion=header&text=Sathwick%20Kiran%20M%20S&fontSize=38&fontColor=ffffff&fontAlignY=55&desc=Data%20Professional%20%7C%20Python%20%C2%B7%20SQL%20%C2%B7%20ETL%20%C2%B7%20ML%20%C2%B7%20Power%20BI%20%7C%20Ex-Sony%20%7C%20MS%20Data%20Science%2C%20UB&descAlignY=78&descSize=13" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,100:7c3aed&height=140&section=header&text=Sathwick%20Kiran%20M%20S&fontSize=38&fontColor=ffffff&fontAlignY=55&desc=Data%20Professional%20%7C%20Python%20%C2%B7%20SQL%20%C2%B7%20ETL%20%C2%B7%20ML%20%C2%B7%20Power%20BI%20%7C%20Ex-Sony%20%7C%20MS%20Data%20Science%2C%20UB&descAlignY=78&descSize=13" width="100%"/>
 
 </div>
 
@@ -54,6 +54,19 @@ Kafka Topics → Airflow Orchestration → PostgreSQL Raw Layer
 | Dashboards | Grafana |
 | RCA / AI Layer | RAG · Ollama · LLaMA · FastAPI |
 | Infrastructure | Docker Compose |
+
+| Phase | Description | Status |
+|-------|-------------|--------|
+| 0 | Project Setup | ✅ Done |
+| 1 | Base Data Layer | ✅ Done |
+| 2 | Historical Data Generation & Batch ETL | ✅ Done |
+| 3 | SQL Modeling and dbt Layer | ✅ Done |
+| 4 | Grafana Dashboard Layer | ✅ Done |
+| 5 | Kafka Streaming Layer | ✅ Done |
+| 6 | Airflow Orchestration | ✅ Done |
+| 7 | Change Impact Logic | 🔄 In Progress |
+| 8 | RAG Layer (Ollama + FastAPI) | ⬜ Pending |
+| 9 | Final Polish | ⬜ Pending |
 
 ![Kafka](https://img.shields.io/badge/Kafka-231F20?style=flat-square&logo=apachekafka&logoColor=white)
 ![Airflow](https://img.shields.io/badge/Airflow-017CEE?style=flat-square&logo=apacheairflow&logoColor=white)
@@ -180,21 +193,10 @@ Three coordinated LangGraph agents — Analyst, Model, and Risk — share a Qdra
 
 ---
 
-### 📊 GitHub Stats
-
 <div align="center">
 
-<img height="160" src="https://github-readme-stats.vercel.app/api?username=Sathwick17&show_icons=true&theme=tokyonight&hide_border=true&bg_color=07090f&title_color=38bdf8&icon_color=7c3aed&text_color=8892b0&ring_color=0ea5e9" />
-<img height="160" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Sathwick17&layout=compact&theme=tokyonight&hide_border=true&bg_color=07090f&title_color=38bdf8&text_color=8892b0" />
+📍 New York, United States &nbsp;·&nbsp; 💼 Open to Data Analyst · Data Engineer · Data Scientist · Analytics Engineer · ML Engineer roles
 
-</div>
-
----
-
-<div align="center">
-
-📍 New York, United States  ·  💼 Open to Data Analyst · Data Engineer · Data Scientist · Analytics Engineer · ML Engineer roles
-
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,100:0ea5e9&height=80§ion=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,100:0ea5e9&height=80&section=footer" width="100%"/>
 
 </div>
