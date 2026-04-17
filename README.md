@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,100:7c3aed&height=140&section=header&text=Sathwick%20Kiran%20M%20S&fontSize=38&fontColor=ffffff&fontAlignY=55&desc=Data%20Professional%20%7C%20Python%20%C2%B7%20SQL%20%C2%B7%20ETL%20%C2%B7%20ML%20%C2%B7%20Power%20BI%20%7C%20Ex-Sony%20%7C%20MS%20Data%20Science%2C%20UB&descAlignY=78&descSize=13" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0ea5e9,100:7c3aed&height=140§ion=header&text=Sathwick%20Kiran%20M%20S&fontSize=38&fontColor=ffffff&fontAlignY=55&desc=Data%20Professional%20%7C%20Python%20%C2%B7%20SQL%20%C2%B7%20ETL%20%C2%B7%20ML%20%C2%B7%20Power%20BI%20%7C%20Ex-Sony%20%7C%20MS%20Data%20Science%2C%20UB&descAlignY=78&descSize=13" width="100%"/>
 
 </div>
 
@@ -85,6 +85,32 @@ Kafka Topics → Airflow Orchestration → PostgreSQL Raw Layer
 
 Built on 1,958 patient records, this project applies four ML classifiers — Logistic Regression, Random Forest, Decision Tree, and SVC — to predict osteoporosis risk from clinical features including age, hormonal changes, calcium intake, and physical activity. The Decision Tree Classifier achieved **90.6% accuracy** after hyperparameter tuning, up from a 73% baseline, and was selected for its clinical interpretability.
 
+```
+Raw Patient Records (Kaggle)
+          │
+          ▼
+   Data Cleaning & Encoding
+   (Categorical → Numerical, Missing Value Handling)
+          │
+          ▼
+   Exploratory Data Analysis
+   (Histograms, Count Plots, Correlation Heatmap)
+          │
+          ▼
+   ┌──────────────────────────────────────┐
+   │           Model Training             │
+   ├──────────────┬───────────────────────┤
+   │  Logistic    │  Random Forest        │
+   │  Regression  │  Classifier           │
+   ├──────────────┼───────────────────────┤
+   │  Decision    │  Support Vector       │
+   │  Tree        │  Classifier (SVC)     │
+   └──────────────┴───────────────────────┘
+          │
+          ▼
+   Best Model: Decision Tree Classifier — 90.6% Accuracy
+```
+
 | Model | Accuracy |
 |-------|----------|
 | Logistic Regression | 83.1% |
@@ -132,6 +158,36 @@ books.csv + rating.csv → HDFS → PySpark EDA → TF-IDF Feature Extraction
 > *Multi-agent LLM system for detecting short-selling opportunities in U.S. equities — built in 15 hours at UB Hackers 2024*
 
 Three coordinated LangGraph agents — Analyst, Model, and Risk — share a Qdrant vector memory and collaboratively evaluate short-selling signals across a ~5GB historical U.S. stock dataset processed on a two-node HDFS cluster (Vultr Cloud). A Logistic Regression model computes per-ticker short probabilities, with the top candidate **CMAX** reaching a 94.5% short probability. Results surface via Streamlit and Tableau dashboards.
+
+```
+U.S. Stock Market Data (~5GB, Kaggle)
+              │
+              ▼
+   Pandas Feature Engineering
+   (RSI, MA Ratio, Volatility, OHLCV)
+              │
+        ┌─────┴──────┐
+        ▼            ▼
+    HDFS Cluster   Logistic Regression Model
+  (Vultr Cloud)    (Short Probability per Ticker)
+                         │
+                         ▼
+              Qdrant Vector Database
+           (Sentence-Transformer Embeddings)
+                         │
+              ┌──────────┼──────────┐
+              ▼          ▼          ▼
+        Analyst       Model       Risk
+         Agent        Agent       Agent
+              └──────────┬──────────┘
+                         ▼
+                  LangGraph StateGraph
+                         │
+              ┌──────────┴──────────┐
+              ▼                     ▼
+        Streamlit               Tableau
+        Dashboard              Dashboard
+```
 
 | Metric | Result |
 |--------|--------|
@@ -195,8 +251,8 @@ Three coordinated LangGraph agents — Analyst, Model, and Risk — share a Qdra
 
 <div align="center">
 
-📍 New York, United States &nbsp;·&nbsp; 💼 Open to Data Analyst · Data Engineer · Data Scientist · Analytics Engineer · ML Engineer roles
+📍 New York, United States  ·  💼 Open to Data Analyst · Data Engineer · Data Scientist · Analytics Engineer · ML Engineer roles
 
-<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,100:0ea5e9&height=80&section=footer" width="100%"/>
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:7c3aed,100:0ea5e9&height=80§ion=footer" width="100%"/>
 
 </div>
