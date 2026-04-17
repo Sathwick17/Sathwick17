@@ -79,7 +79,60 @@ Kafka Topics → Airflow Orchestration → PostgreSQL Raw Layer
 
 ---
 
-**02 — Osteoporosis Risk Prediction**
+**02 — Synapse Street · AI Multi-Agent Short Selling Detection**
+
+> *Multi-agent LLM system for detecting short-selling opportunities in U.S. equities — built in 24 hours at UB Hackers 2024*
+
+Three coordinated LangGraph agents — Analyst, Model, and Risk — share a Qdrant vector memory and collaboratively evaluate short-selling signals across a ~5GB historical U.S. stock dataset processed on a two-node HDFS cluster (Vultr Cloud). A Logistic Regression model computes per-ticker short probabilities, with the top candidate **CMAX** reaching a 94.5% short probability. Results surface via Streamlit and Tableau dashboards.
+
+```
+U.S. Stock Market Data (~5GB, Kaggle)
+              │
+              ▼
+   Pandas Feature Engineering
+   (RSI, MA Ratio, Volatility, OHLCV)
+              │
+        ┌─────┴──────┐
+        ▼            ▼
+    HDFS Cluster   Logistic Regression Model
+  (Vultr Cloud)    (Short Probability per Ticker)
+                         │
+                         ▼
+              Qdrant Vector Database
+           (Sentence-Transformer Embeddings)
+                         │
+              ┌──────────┼──────────┐
+              ▼          ▼          ▼
+        Analyst       Model       Risk
+         Agent        Agent       Agent
+              └──────────┬──────────┘
+                         ▼
+                  LangGraph StateGraph
+                         │
+              ┌──────────┴──────────┐
+              ▼                     ▼
+        Streamlit               Tableau
+        Dashboard              Dashboard
+```
+
+| Metric | Result |
+|--------|--------|
+| AUROC | 0.642 |
+| Precision@10 | 0.60 |
+| Top Short Candidate | CMAX — 94.5% probability |
+| Build Time | 24 hours |
+
+![LangGraph](https://img.shields.io/badge/LangGraph-7c3aed?style=flat-square&logoColor=white)
+![Qdrant](https://img.shields.io/badge/Qdrant-0ea5e9?style=flat-square&logoColor=white)
+![Scikit-learn](https://img.shields.io/badge/Scikit--learn-f97316?style=flat-square&logo=scikitlearn&logoColor=white)
+![Hadoop](https://img.shields.io/badge/Hadoop_HDFS-FFCE00?style=flat-square&logo=apachehadoop&logoColor=black)
+![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
+
+**[View Repository →](https://github.com/Sathwick17/ub_hackers)**
+
+---
+
+**03 — Osteoporosis Risk Prediction**
 
 > *Multi-model classification pipeline for early-stage osteoporosis detection from patient medical records*
 
@@ -127,7 +180,7 @@ Raw Patient Records (Kaggle)
 
 ---
 
-**03 — Amazon Book Review Analytics**
+**04 — Amazon Book Review Analytics**
 
 > *Full-scale big data pipeline processing 3.3M+ reviews using Hadoop, PySpark, and Spark MLlib*
 
@@ -150,59 +203,6 @@ books.csv + rating.csv → HDFS → PySpark EDA → TF-IDF Feature Extraction
 ![Docker](https://img.shields.io/badge/Docker-0ea5e9?style=flat-square&logo=docker&logoColor=white)
 
 **[View Repository →](https://github.com/Sathwick17/amazon-bigdata-review-analytics)**
-
----
-
-**04 — Synapse Street · AI Multi-Agent Short Selling Detection**
-
-> *Multi-agent LLM system for detecting short-selling opportunities in U.S. equities — built in 15 hours at UB Hackers 2024*
-
-Three coordinated LangGraph agents — Analyst, Model, and Risk — share a Qdrant vector memory and collaboratively evaluate short-selling signals across a ~5GB historical U.S. stock dataset processed on a two-node HDFS cluster (Vultr Cloud). A Logistic Regression model computes per-ticker short probabilities, with the top candidate **CMAX** reaching a 94.5% short probability. Results surface via Streamlit and Tableau dashboards.
-
-```
-U.S. Stock Market Data (~5GB, Kaggle)
-              │
-              ▼
-   Pandas Feature Engineering
-   (RSI, MA Ratio, Volatility, OHLCV)
-              │
-        ┌─────┴──────┐
-        ▼            ▼
-    HDFS Cluster   Logistic Regression Model
-  (Vultr Cloud)    (Short Probability per Ticker)
-                         │
-                         ▼
-              Qdrant Vector Database
-           (Sentence-Transformer Embeddings)
-                         │
-              ┌──────────┼──────────┐
-              ▼          ▼          ▼
-        Analyst       Model       Risk
-         Agent        Agent       Agent
-              └──────────┬──────────┘
-                         ▼
-                  LangGraph StateGraph
-                         │
-              ┌──────────┴──────────┐
-              ▼                     ▼
-        Streamlit               Tableau
-        Dashboard              Dashboard
-```
-
-| Metric | Result |
-|--------|--------|
-| AUROC | 0.642 |
-| Precision@10 | 0.60 |
-| Top Short Candidate | CMAX — 94.5% probability |
-| Build Time | 15 hours |
-
-![LangGraph](https://img.shields.io/badge/LangGraph-7c3aed?style=flat-square&logoColor=white)
-![Qdrant](https://img.shields.io/badge/Qdrant-0ea5e9?style=flat-square&logoColor=white)
-![Scikit-learn](https://img.shields.io/badge/Scikit--learn-f97316?style=flat-square&logo=scikitlearn&logoColor=white)
-![Hadoop](https://img.shields.io/badge/Hadoop_HDFS-FFCE00?style=flat-square&logo=apachehadoop&logoColor=black)
-![Streamlit](https://img.shields.io/badge/Streamlit-FF4B4B?style=flat-square&logo=streamlit&logoColor=white)
-
-**[View Repository →](https://github.com/Sathwick17/ub_hackers)**
 
 ---
 
